@@ -27,13 +27,29 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
 
+forEach() will apply a function to each item in the array without returning a new Array. map() will return a new array with the function applied to every item in the original array, and it does not alter the original array.
+
 2. Explain the difference between a callback and a higher order function.
+
+A higher order function takes other functions as parameters/arguments, and a callback function is a function you would put into another function as a parameter/argument.
 
 3. What is closure?
 
+A closure is a combination of a function and the lexical environment within which that function was declared. A function that is nested/returned from a parent function has access to the parent function's scope/variables, even after the parent function has finished running.
+
 4. Describe the four rules of the 'this' keyword.
 
+1- (Window binding) If you haven't bound your code to anything specific when using the 'this' keyword, it will be bound to the global/window object.
+
+2- (Implicit binding) If you call a method or property that is definied using the 'this' keyword, 'this' is referring to whatever is to the left of the dot (the object)
+
+3- (Explicit binding) You can specifically state what the 'this' keyword should be referring to by using the apply(), call(), or bind() function.
+
+4- (New binding) When you create a new instance of an object using a constructor, the 'this' keyword is bound to the newly created instance with the use of the 'new' keyword.
+
 5. Why do we need super() in an extended class?
+
+So you can call the constructor of the parent class and have access to the parent's properties and methods. Calling super() will create a context for the 'this' keyword in your extended class, including everything you put in as an argument when calling super() plus everything new that's about to be declared/defined for the extended class.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
